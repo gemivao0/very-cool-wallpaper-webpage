@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>this is my very cool webpage</title>
+    <style>
+        /* Meta tag for viewport to make it mobile responsive */
+        meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        /* Overall background color for the page */
+        body {
+            background-color: #f2f2f2; /* Light gray background for the entire page */
+            font-family: 'Pixel', sans-serif; /* Set pixelated font for the page */
+            color: black; /* Dark text for readability */
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: auto; /* Allow scrolling if the content exceeds the page */
+        }
+
+        /* Style for the heading */
+        h1 {
+            background-color: #000000; /* Black background for heading */
+            color: white; /* White text */
+            padding: 20px; /* Space around the text */
+            text-align: center; /* Center the text */
+            border-radius: 10px; /* Rounded corners */
+            font-family: 'Courier New', Courier, monospace; /* Pixelated font */
+        }
+
+        /* Style for the paragraph */
+        p {
+            background-color: #f2f2f2; /* Light gray background for paragraph */
+            color: #333; /* Dark text */
+            padding: 15px; /* Space around the text */
+            font-size: 18px; /* Bigger text */
+            border: 1px solid #ccc; /* Border around the paragraph */
+            border-radius: 5px; /* Rounded corners */
+            width: 80%; /* Limit the width */
+            margin: 20px auto; /* Center the paragraph */
+            font-family: 'Courier New', Courier, monospace; /* Pixelated font */
+        }
+
+        /* Style for the image gallery */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 10px; /* Space between images */
+            padding: 10px;
+            background-color: #333; /* Dark gray background for the image gallery */
+            border-radius: 10px; /* Rounded corners for the gallery */
+            margin: 0 auto;
+            width: 90%; /* Limit the width of the gallery */
+        }
+
+        .image-gallery img {
+            width: 100%; /* Make the images take up the full column width */
+            height: auto; /* Maintain aspect ratio */
+            cursor: pointer; /* Change the cursor to a pointer */
+            border-radius: 5px; /* Rounded corners for images */
+            transition: transform 0.3s ease; /* Smooth scale transition */
+        }
+
+        /* Hover effect for images */
+        .image-gallery img:hover {
+            transform: scale(1.05); /* Slightly enlarge the image */
+        }
+
+        /* Ensure images are responsive on smaller screens */
+        @media screen and (max-width: 768px) {
+            .image-gallery {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .image-gallery {
+                grid-template-columns: 1fr; /* 1 column on mobile screens */
+            }
+
+            p {
+                width: 90%; /* Increase paragraph width on small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>very cool webpage for wallpaper</h1>
+    <p>page made entirely by dave :D</p>
+
+    <!-- Easter Egg hidden under a details element -->
+    <details>
+        <summary>what_this 🎉</summary>
+        <p>grr u found it 🥳</p>
+        <p>this_is_nothing_lol 👏</p>
+    </details>
+
+    <div class="image-gallery">
+        <a href="black 1.jpeg" target="_blank">
+            <img src="black 1.jpeg" alt="Wallpaper 1">
+        </a>
+        <a href="black 2.jpeg" target="_blank">
+            <img src="black 2.jpeg" alt="Wallpaper 2">
+        </a>
+        <a href="black 3.jpeg" target="_blank">
+            <img src="black 3.jpeg" alt="Wallpaper 3">
+        </a>
+        <a href="black 4.png" target="_blank">
+            <img src="black 4.png" alt="Wallpaper 4">
+        </a>
+        <a href="black 5.jpeg" target="_blank">
+            <img src="black 5.jpeg" alt="Wallpaper 5">
+        </a>
+        <a href="black 6.png" target="_blank">
+            <img src="black 6.png" alt="Wallpaper 6">
+        </a>
+        <a href="light blue 1.jpeg" target="_blank">
+            <img src="light blue 1.jpeg" alt="Wallpaper 7">
+        </a>
+        <a href="light blue 2.jpeg" target="_blank">
+            <img src="light blue 2.jpeg" alt="Wallpaper 8">
+        </a>
+        <a href="light blue 3.jpeg" target="_blank">
+            <img src="light blue 3.jpeg" alt="Wallpaper 9">
+        </a>
+        <a href="light blue 4.png" target="_blank">
+            <img src="light blue 4.png" alt="Wallpaper 10">
+        </a>
+        <a href="light blue 5.jpeg" target="_blank">
+            <img src="light blue 5.jpeg" alt="Wallpaper 11">
+        </a>
+        <a href="light blue 6.jpeg" target="_blank">
+            <img src="light blue 6.jpeg" alt="Wallpaper 12">
+        </a>
+    </div>
+</body>
+</html>
